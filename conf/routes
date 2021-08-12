@@ -1,0 +1,12 @@
+### NoDocs ###
+GET     /                       controllers.HomeController.hello(name: String ?= "world")
+
+### NoDocs ###
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+### NoDocs ###
+GET     /all                        controllers.HomeController.getAll
+
+
+### NoDocs ###
+GET        /:eventType/average/from=:from&to=:to       controllers.HomeController.getByEventTypeInRange(eventType: String, from: Long, to: Long)
